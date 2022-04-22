@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="main.css">
+        <title>電卓</title>
+      </head>
+ 
+      <body>
+        <div class="DisplayNumber">
+          <input id="resultArea" type="text" value="0">
+        </div>
+        <div class="InputNumber">
+          <div class="keybord">
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>7</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>8</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>9</button>
+            <button id ="inputFBAO" onclick= clickFBAO(this.innerHTML)>/</button>
+          </div>
+          <div class="keybord">
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>4</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>5</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>6</button>
+            <button id ="inputFBAO" onclick= clickFBAO(this.innerHTML)>*</button>
+          </div>
+          <div class="keybord">
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>1</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>2</button>
+            <button id ="inputNumber" onclick= clickNumber(this.innerHTML)>3</button>
+            <button id ="inputFBAO" onclick= clickFBAO(this.innerHTML)>-</button>
+          </div>
+          <div class="keybord">
+            <button id ="inputZero" onclick= clickZero(this.innerHTML)>0</button>
+            <button id ="inputDoubleZero" onclick= clickDoubleZero(this.innerHTML)>00</button>
+            <button id ="inputPoint" onclick= clickPoint(this.innerHTML)>.</button>
+            <button id ="inputFBAO" onclick= clickFBAO(this.innerHTML)>+</button>
+          </div>
+          <div class="keybord-end">
+            <button id ="inputClear" onclick= clickClear(this.innerHTML)>AC</button>
+            <button id ="inputEqual" onclick= clickEqual(this.innerHTML)>=</button>
+          </div>
+        </div>
+        <script src="main.js"></script>
+      </body>
+    </html>

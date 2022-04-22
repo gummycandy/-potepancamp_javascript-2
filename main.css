@@ -1,0 +1,38 @@
+.DisplayNumber {
+    width: 150px;
+}
+    
+#resultArea {
+    box-sizing:border-box;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+.keybord {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keybord-end {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button {
+    width: 25%;
+    border-radius: 5px;
+    background-color: #B0C4DE;
+}
+
+.keybord-end button {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #B0C4DE;
+}
+
+
