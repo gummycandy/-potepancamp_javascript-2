@@ -1,6 +1,5 @@
 var resultArea;
 var is_calc = false;
-var inputNumber = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 window.addEventListener("load",function() {
     resultArea = null;
@@ -40,23 +39,7 @@ function clickFBAO(val) {
 }
 
 function clickPoint(val) {
-    if(can_clickPoint()) {
-        if(["."].includes.resultArea.value) {
-            if(["+","-","*","/"].includes.resultArea.value) {
-                if(resultArea.indexOf(".") < resultArea.indexOf("+","-","*","/") && resultArea.split(".").length === resultArea.split("+","-","*","/").length + 1) {
-                    resultArea.value += val;
-                }else {
-                    resultArea.value = resultArea.value.slice(0);
-                }
-            }else {
-                resultArea.value = resultArea.value.slice(0);
-            }
-        }else {
-            resultArea.value += val;
-        }
-    }else {
-        resultArea.value = resultArea.value.slice(0);
-    }
+    resultArea.value += val;
 }
 
 function clickEqual() {
@@ -74,8 +57,4 @@ function clickEqual() {
 
 function is_clickFBAO_last() {
     return ["+","-","*","/"].includes(resultArea.value.toString().slice(-1));
-}
-
-function can_clickPoint() {
-    return inputNumber.includes(resultArea.value.toString().slice(-1));
 }
